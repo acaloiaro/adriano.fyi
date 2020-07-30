@@ -1,0 +1,39 @@
+baseurl: https://adriano.fyi
+DefaultContentLanguage: en
+title: Adriano Caloiaro
+theme: beautifulhugo
+metaDataFormat: yaml
+pygmentsStyle: trac
+pygmentsUseClasses: true
+pygmentsCodeFences: true
+pygmentsCodefencesGuessSyntax: true
+
+params:
+  subtitle: He's Very Robust
+  mainSections : ["post","posts"]
+  logo: img/avatar-icon.png
+  favicon: img/favicon.ico
+  dateFormat: January 2, 2006
+  commit: false
+  rss: true
+  comments: false
+  readingTime: true
+  wordCount: true
+  useHLJS: true
+  socialShare: false
+  delayDisqus: false
+  showRelatedPosts: true
+
+author:
+  name: Adriano
+  email: homepage@adriano.fyi
+  github: acaloiaro
+
+menu:
+  main:
+    - name: About
+      url: page/about
+      weight: 1
+    - name: Where Am I
+      url: page/whereami
+      weight: 2
