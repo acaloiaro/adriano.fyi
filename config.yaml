@@ -32,8 +32,8 @@ author:
 menu:
   main:
     - name: About
-      url: page/about
+      url: /about
       weight: 1
     - name: Where Am I
-      url: page/whereami
+      url: /whereami
       weight: 2
