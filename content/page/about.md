@@ -2,7 +2,7 @@
 layout: page
 title: About me
 subtitle: 🤓
-url: /about
+url: /aboutme
 ---
 
 If you haven't guessed by now, my name is Adriano and I live in New York City. Despite living in the city, you're
