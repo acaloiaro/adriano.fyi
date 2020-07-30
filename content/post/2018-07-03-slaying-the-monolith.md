@@ -56,14 +56,14 @@ If you guessed that it failed in phase 1, you get an A+. After less than a day o
 
 Let me preface this by saying LibreOffice is an absolute triumph of the open source movement. Most users never have the opportunity of seeing it fail because 1. it’s good, and 2. most users aren’t opening tens of thousands of documents in it every day. Any time you use software in unexpected ways, failure should be the expected outcome. Similarly, with any software that handles user input, failure should be the expected outcome.
 
-![Occasionally LibreOffice can't event ]({{site.baseurl}}/img/negative_man.png)
+![Occasionally LibreOffice can't event ](/img/negative_man.png)
 
 
 Because people upload weird things — text documents with Word document extensions (.doc/.docx). Word documents with text extensions (.txt). Clips of The Bachelor with rich text format extensions (.rtf). Your garden variety weird stuff; failures are bound to happen. The most insidious, though, is a Word document with the correct file extension; a file to which LibreOffice promptly responds, “Ok, I’ve got this” — followed by several minutes of silence, and finally — “I can’t even. I’ve lost my capacity to even with this document”. These documents may be valid in Microsoft Word, but they’re LibreOffice kryptonite. This is where Dochouse was on day one — with significantly less than one percent of real-world load, Dochouse couldn’t even. We needed to get a handle on LibreOffice processes; they were running amok with neither time nor resource bounds. LibreOffice is persistent; when it encounters documents that it can’t convert, it doesn’t quit. Which, for Dochouse, meant that goroutines and memory consumption were on a monotonic path to abject failure. A full production rollout was absolutely out of the question.
 
 Collabora had already solved this problem by incorporating JODConverter into their products. JODConverter manages a pool of Libre/Open Office instances; it detects when instances get stuck and evacuates them from the worker pool. Additionally it adds work deadlines around every job. This is exactly what we needed. The problem is that JODConverter is written in Java and Java isn’t nearly as hip as Golang. I mean, Golang has a cute gopher logo and Java has what … Duke? Please.
 
-![Golang Gopher]({{site.baseurl}}/img/gopher.png)
+![Golang Gopher](/img/gopher.png)
 
 Case closed.
 

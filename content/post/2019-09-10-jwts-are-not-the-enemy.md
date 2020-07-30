@@ -46,5 +46,5 @@ an ultra-hip lord-whisperer in a pair of [$4,000 sneakers](https://www.instagram
 for good reasons like they're too big, or they're too expensive to validate given your performance demands, or they're
 too complex for your needs; but please cut the FUD. This is a...
 
-![no fud zone]({{site.baseurl}}/img/no_fud_zone.png)
+![no fud zone](/img/no_fud_zone.png)
 
