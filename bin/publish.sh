@@ -1,5 +1,4 @@
 #!/bin/bash
 
 rm tags
-hugo
-rsync -e ssh -a public/ adriano@mycorp.adriano.fyi:/var/www/adriano.fyi
+rsync -e ssh -a ~/git/adriano.fyi/ adriano@mycorp.adriano.fyi:/home/adriano/adriano.fyi/
