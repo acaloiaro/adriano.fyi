@@ -21,7 +21,9 @@
         maxZoom: 19,
         attribution: '<a href="https://www.mapbox.com/about/maps/" target="_blank">&copy; Mapbox &copy; OpenStreetMap</a>',
         id: 'outdoors-v11',
-        token: {{ os.Getenv "MAPBOX_API_KEY" }}
+        token: {{ os.Getenv "MAPBOX_API_KEY" }},
+        tileSize: 512,
+        zoomOffset: -1
       }).addTo(map);
 
       // show the scale bar on the lower left corner
