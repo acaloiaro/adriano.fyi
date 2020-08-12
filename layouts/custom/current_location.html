@@ -1,9 +1,4 @@
 {{ define "main" }}
-  {{ $current_location := getJSON "https://adriano.fyi/current_location" }}
-  {{ $geocode_url := printf "http://mycorp.adriano.fyi:4000/v1/reverse?point.lon=%f&point.lat=%f&layers=coarse&size=1" $current_location.lon $current_location.lat }}
-  {{ $dataJ := getJSON $geocode_url }}
-  {{ $place :=  index $dataJ.features 0 }}
-
   <link rel="stylesheet" href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css"
                          integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ=="
                          crossorigin=""/>
@@ -15,12 +10,12 @@
   </style>
 
   <div class="container" role="main">
-    <h2>{{ $place.properties.label }}</h2>
+    <h2>{{ $.Site.Params.CurrentLocationName }}</h2>
     <div id="mapid"></div>
 
     <script type="text/javascript">
-      var lat = {{ $current_location.lat }};
-      var lon = {{ $current_location.lon }};
+      var lat = {{ $.Site.Params.CurrentLat }};
+      var lon = {{ $.Site.Params.CurrentLon }};
       var map = L.map('mapid').setView([lat, lon], 15);
       L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
         maxZoom: 19,
