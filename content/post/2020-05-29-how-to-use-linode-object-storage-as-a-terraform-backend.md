@@ -1,11 +1,13 @@
 ---
 date: "2020-05-29T00:00:00Z"
 published: true
-subtitle: Or any other S3-compatible object store
+subtitle: (or any other S3-compatible object store)
 tags:
 - programming
 - software development
-title: Use Terraform S3 Backend With Linode
+aliases:
+  - /post/2020-05-29-terraform-s3-backend-with-linode/
+title: How to Use Linode Object Storage as a Terraform Backend
 ---
 
 This is mostly a note to my future self since I couldn't find any documentation on using Terraform with
