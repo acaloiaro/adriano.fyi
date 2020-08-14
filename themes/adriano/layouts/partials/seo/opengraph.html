@@ -1,0 +1,27 @@
+  {{ $current_location := getJSON "https://adriano.fyi/current_location" }}
+  {{ $geocode_url := printf "http://mycorp.adriano.fyi:4000/v1/reverse?point.lon=%f&point.lat=%f&layers=coarse&size=1" $current_location.lon $current_location.lat }}
+  {{ $dataJ := getJSON $geocode_url }}
+  {{ $place :=  index $dataJ.features 0 }}
+  {{ $mapbox_api_token := os.Getenv "MAPBOX_API_KEY" }}
+  {{ $custom_page_image_url := printf "https://api.mapbox.com/styles/v1/mapbox/outdoors-v11/static/pin-s(%f,%f)/%f,%f,8,0/640x480?access_token=%s" $current_location.lon $current_location.lat $current_location.lon $current_location.lat $mapbox_api_token }}
+
+{{- with .Title | default .Site.Title }}
+<meta property="og:title" content="{{ . }}" />
+{{- end }}
+{{- if eq .Page.File.Path "custom/whereami.md"  }}
+<meta property="og:description" content="{{ $.Site.Params.CurrentLocationName }}"/>
+<meta property="og:image" content="{{ $custom_page_image_url }}" />
+{{- else }}
+{{- with .Description | default .Params.subtitle | default .Summary | default .Page.File.Path }}
+<meta property="og:description" content="{{ . }}"/>
+{{- end }}
+{{- with .Params.share_img | default .Params.image | default .Site.Params.logo }}
+<meta property="og:image" content="{{ . | absURL }}" />
+{{- end }}
+{{- end }}
+{{- with .Site.Params.fb_app_id }}
+<meta property="fb:app_id" content="{{ . }}" />
+{{- end }}
+<meta property="og:url" content="{{ .Permalink | absLangURL }}" />
+<meta property="og:type" content="website" />
+<meta property="og:site_name" content="{{ .Site.Title }}" />

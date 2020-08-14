@@ -1,7 +1,7 @@
 baseurl: https://adriano.fyi
 DefaultContentLanguage: en
 title: Adriano Caloiaro
-theme: beautifulhugo
+theme: adriano
 metaDataFormat: yaml
 pygmentsStyle: trac
 pygmentsUseClasses: true

@@ -1,0 +1,18 @@
+{{- with .Title | default .Site.Title }}
+<meta name="twitter:title" content="{{ . | truncate 70 }}" />
+{{- end }}
+{{- if eq .Page.File.Path "custom/whereami.md"  }}
+<meta name="twitter:description" content="{{ $.Site.Params.CurrentLocationName  | truncate 200 }}">
+{{- else }}
+{{- with .Description | default .Params.subtitle | default .Summary }}
+<meta name="twitter:description" content="{{ . | truncate 200 }}">
+{{- end }}
+{{- end }}
+{{- with .Params.share_img | default .Params.image | default .Site.Params.logo }}
+<meta name="twitter:image" content="{{ . | absURL }}" />
+{{- end }}
+<meta name="twitter:card" content="summary" />
+{{- with .Site.Author.twitter }}
+<meta name="twitter:site" content="@{{ . }}" />
+<meta name="twitter:creator" content="@{{ . }}" />
+{{- end }}
