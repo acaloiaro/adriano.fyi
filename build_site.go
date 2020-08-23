@@ -102,12 +102,8 @@ func getCurrentLocation() (lat, lon float64, currentLocationName string) {
 	return
 }
 
-type property struct {
-	Label string `json:"label"`
-}
-
 type feature struct {
-	Properties property `json:"properties"`
+	PlaceName string `json:"place_name"`
 }
 
 type peliasResponse struct {
@@ -119,7 +115,7 @@ func getCurrentLocationName(lon, lat float64) (locationName string) {
 		Timeout: time.Second * 2, // Timeout after 2 seconds
 	}
 
-	url := fmt.Sprintf("http://mycorp.adriano.fyi:4000/v1/reverse?point.lon=%f&point.lat=%f&layers=coarse&size=1", lon, lat)
+	url := fmt.Sprintf("https://api.mapbox.com/geocoding/v5/mapbox.places/%f,%f.json?access_token=%s&types=locality,place", lon, lat, os.Getenv("MAPBOX_API_KEY"))
 	req, err := http.NewRequest(http.MethodGet, url, nil)
 	if err != nil {
 		log.Fatal(err)
@@ -145,7 +141,7 @@ func getCurrentLocationName(lon, lat float64) (locationName string) {
 		log.Fatal(jsonErr)
 	}
 
-	locationName = r.Features[0].Properties.Label
+	locationName = r.Features[0].PlaceName
 
 	return
 }
