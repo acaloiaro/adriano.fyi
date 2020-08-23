@@ -10,21 +10,7 @@ pygmentsCodefencesGuessSyntax: true
 publishDir: /var/www/adriano.fyi
 
 params:
-  subtitle: He's Very Robust
-  mainSections : ["post","posts"]
-  logo: img/avatar-icon.png
-  favicon: img/favicon.ico
-  dateFormat: January 2, 2006
-  commit: false
-  rss: true
-  comments: false
-  readingTime: true
-  wordCount: true
-  useHLJS: true
-  socialShare: false
-  delayDisqus: false
-  showRelatedPosts: true
-
+  # Configure params in build_site.go
 author:
   name: Adriano
   email: homepage@adriano.fyi
