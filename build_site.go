@@ -39,7 +39,7 @@ func build() error {
 	env = append(env, "HUGO_PARAMS.Subtitle=He's Very Robust")
 	env = append(env, "HUGO_PARAMS.Logo=img/avatar-icon.png")
 	env = append(env, "HUGO_PARAMS.Favicon=img/favicon.ico")
-	env = append(env, "HUGO_PARAMS.DateFormat=January 1, 2020")
+	env = append(env, "HUGO_PARAMS.DateFormat=January 01, 2020")
 	env = append(env, "HUGO_PARAMS.Rss=true")
 	env = append(env, "HUGO_PARAMS.ShowRelatedPosts=true")
 
