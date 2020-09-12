@@ -146,7 +146,11 @@ func getCurrentLocationName(lon, lat float64) (locationName string) {
 		log.Fatal(jsonErr)
 	}
 
-	locationName = r.Features[0].PlaceName
+	if len(r.Features) == 0 {
+		log.Printf("Unable to fetch location for coordinates: %f,%f", lon, lat)
+	} else {
+		locationName = r.Features[0].PlaceName
+	}
 
 	return
 }
