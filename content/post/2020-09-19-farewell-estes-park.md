@@ -3,6 +3,7 @@ date: "2020-09-19"
 published: true
 title: Farewell Estes Park
 subtitle: With a little bit of scofflaw
+aliases: /post/2020-09-19-farewall-estes-park/
 image: https://nextcloud.adriano.fyi/s/4Tz3gF7RtWAfejL/preview
 share_img: https://nextcloud.adriano.fyi/s/4Tz3gF7RtWAfejL/preview
 tags:
