@@ -4,8 +4,8 @@ published: true
 title: Farewell Estes Park
 subtitle: With a little bit of scofflaw
 aliases: /post/2020-09-19-farewall-estes-park/
-image: https://nextcloud.adriano.fyi/s/4Tz3gF7RtWAfejL/preview
-share_img: https://nextcloud.adriano.fyi/s/4Tz3gF7RtWAfejL/preview
+image: https://nextcloud.adriano.fyi/s/sbs4yxPrdoJCabT/preview
+share_img: https://nextcloud.adriano.fyi/s/sbs4yxPrdoJCabT/preview
 tags:
 - roaming
 - travel
@@ -21,7 +21,7 @@ On September 9th winter came early in Colorado, following record-setting tempera
 
 Immediate panic transformed into eventual delight. TRR would probably reopen, but Fall River Road would probably not. That doesn't bode well for a ride involving Fall River Road, but It all turned out to be great news. Why? First of all the entirety of RMNP is timed-entry restricted, meaning you have to have reservation in advance to enter with a car. Bikes are open game. This means the park is more empty and with fewer cars than it _ever_ is. Secondly, gate security on a road like Fall River Road doesn't exits, which meant I'd probably have the entire north section of the park to myself if I was willing to duck a gate and turn a blind eye to some pesky rules.
 
-![The top of TT](https://nextcloud.adriano.fyi/s/6jnd637ZwWQExrX/preview "The top of TRR")
+![The top of TT](https://nextcloud.adriano.fyi/s/sbs4yxPrdoJCabT/preview "The top of TRR")
 
 Indeed, I've never been more alone in RMNP. The ride was fantastic and without a soul in sight until I peaked out at the alpine visitor's center. I have to admit that leading into this ride I was questioning whether I still had it because I'm far from peak personal fitness. I've been active recently, but not 1 mile of elevation gain active. So it was a bit of a surprise to finish this climb and decent in 3.5 hours. I was harboring fears of getting turned around by the elevation and steep grade, and no longer being in my 20s. I don't know how long my first ride of TRR took back in 2015, but it was embarrassingly longer. Helluva way to end my 5 weeks in Estes Park!
 
