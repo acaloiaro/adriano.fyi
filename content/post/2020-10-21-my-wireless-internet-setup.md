@@ -96,9 +96,11 @@ Providers may refer to throttling by some other name, but the details are genera
 
 Scenario:
 
-You have an "unlimited" data plan with some fine print that says after `X` gigabytes of usage, you'll be throttled to `2G` speed.
+> You have an "unlimited" data plan with some fine print that says after `X` gigabytes of usage, you'll be throttled to `2G` speed.
 
-You're half way through the month and you've already consumed `X` gigabytes of data. Now it's important to know how fast "2G speed" is. Almost all providers throttle to 2G speed when they throttle, so make no mistake: **2G SPEED IS WAY TOO SLOW**
+> You're half way through the month and you've already consumed `X` gigabytes of data. You try to load https://reuters.com to see what insanity the US cheeto-in-chief has been spewing, but the page won't load.
+
+Now it's important to know how fast "2G speed" is. Almost all providers throttle to 2G speed when they throttle, so make no mistake: **2G SPEED IS WAY TOO SLOW**
 
 You're not getting anything done at `2G` speed. Specifically, it's `128Kbps`, or an ISDN line, or `~2x` the speed of your childhood AOL dialup connection. Scientifically, it's the speed at which you test a web page in your browser and you give up saying: "Nope, no internet here". So if you're getting throttled, you're neither playing nor working on the interwebs. And let me be clear, if you're getting throttled to `128Kbps/2G` speed, you're _lucky_ if you see that kind of speed. You're probably running at 1995 `56K` dialup at best.
 
@@ -110,9 +112,9 @@ This is the lesser of two evils.
 
 Scenario:
 
-You have an "unlimited" data plan with some fine print that says after `X` gigabytes of usage, you'll be deprioritized.
+> You have an "unlimited" data plan with some fine print that says after `X` gigabytes of usage, you'll be deprioritized.
 
-Someone who hasn't exceeded their soft cap needs top download a file and the tower is already overloaded. Your Netflix stream get a little stuttery.
+> Someone who hasn't exceeded their soft cap needs to download a file and the cell tower you're on is already overloaded. Your Netflix stream gets a little stuttery.
 
 This one's a bit more ambiguous. But in my experience, and in the places I tend to stay, it's hard to tell the difference between mediocre signal and deprioritization. Basically, your traffic gets put behind everyone else's traffic. If you're somewhere rural, you're probably not going to notice because service already sucks. That's the reality.
 
