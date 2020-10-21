@@ -88,7 +88,7 @@ I cannot stress that enough. If you can afford it, and you know you'll move loca
 
  ## Throttling and Deprioritization
 
-You'll *need* to know the difference between {{anchorize "Throttling and Deprioritization"}} before purchasing a data plan. Every wireless provider engages in one, if not both of these two practices, and the difference between them are stark.
+You'll **need** to know the difference between throttling and deprioritization before purchasing a data plan. Every wireless provider engages in one, if not both of these two practices, and the difference between them are stark.
 
 ## Throttling
 
