@@ -74,8 +74,6 @@ Wireless routers are the most versatile option. And generally the most expensive
 * Many wireless providers only _officially_ support their own "hotspot" devices. E.g. "Nighthawks" and "MIFIs"
 * Can be quite expensive
 
----
-
 # Wireless Providers
 
 This section could become _very long_. So instead of providing all the details here, I'll point you to the [Mobile Internet Resource Center](https://www.rvmobileinternet.com), which is an invaluable resource for understanding the current mobile service provider landscape. Things change _fast_ when it comes to providers, so by the time you read this there may be a new kid on the block. I used Mobile Internet Resource Center extensively when I was researching both gear and providers.
@@ -88,9 +86,9 @@ Instead of getting into the details here, I'll leave you with the most important
 
 I cannot stress that enough. If you can afford it, and you know you'll move locations often -- have at lease two service providers at all times. Whether it's Verzion, Sprint, T-Mobile, or AT&T -- have at least two. If you can afford more, get more than two; especially if you don't have a direct relationship with the provider and one is at risk of going out of business (i.e. you're connecting through an MVNO).
 
- ## {{anchorize "Throttling and Deprioritization"}}
+ ## Throttling and Deprioritization
 
-You'll *need* to know the difference between throttling and deprioritization before purchasing a data plan. Every wireless provider engages in one, if not both of these two practices, and the difference between them are stark and vital.
+You'll *need* to know the difference between {{anchorize "Throttling and Deprioritization"}} before purchasing a data plan. Every wireless provider engages in one, if not both of these two practices, and the difference between them are stark.
 
 ## Throttling
 
