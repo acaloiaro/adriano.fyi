@@ -2,8 +2,8 @@
 date: "2020-10-21"
 published: true
 title: My Wireless Internet Setup
-image: https://nextcloud.adriano.fyi/s/PdSy96KmXjPiDt6/preview
-share_img: https://nextcloud.adriano.fyi/s/PdSy96KmXjPiDt6/preview
+image: https://nextcloud.adriano.fyi/s/psXXs7owCf4kANZ/preview
+share_img: https://nextcloud.adriano.fyi/s/psXXs7owCf4kANZ/preview
 tags:
 - roaming
 - travel
